@@ -592,8 +592,8 @@ printf("Traffic In : %.2f ".$in_prefix."b/s (".$in_usage." %%), Out : %.2f ".$ou
 if ($opt_S) {
  	printf(" - Link Speed : %d", $speed_card);
 }
-printf("|traffic_in=".$in_perfparse_traffic_str."Bits/s;$warningBit;$criticalBit;0;$speed_card traffic_out=".$out_perfparse_traffic_str."Bits/s;$warningBit;$criticalBit;0;$speed_card\n");
-exit($ERRORS{$status});
+printf("|inUsage=".$in_usage."%% outUsage=".$out_usage."%% traffic_in=".$in_perfparse_traffic_str."Bits/s;$warningBit;$criticalBit;0;$speed_card traffic_out=".$out_perfparse_traffic_str."Bits/s;$warningBit;$criticalBit;0;$speed_card\n");
+
 
 sub print_usage () {
     print "\nUsage:\n";
